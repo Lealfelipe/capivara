@@ -1,5 +1,5 @@
 from sqlalchemy import String, Integer, Column
-
+from sqlalchemy.orm import declarative_base
 from main import db
 
 class Item(db.Model):

@@ -15,8 +15,8 @@ def create_app():
         with application.app_context():
             db.drop_all()
             db.create_all()
-            from banco.crawler import capivara_database
-            capivara_database(db)
+            from banco.crawler import capivara
+            capivara(db)
 
         return application
 

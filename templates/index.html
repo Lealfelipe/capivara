@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Itens</title>
+</head>
+<body>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <td>ID_Item</td>
+        <td>Nome</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in itens %}
+        <tr>
+          <td>{{ item.id_item }}</td>
+          <td>{{ item.nome }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+
+
+  </table>
+
+</body>
+</html>
